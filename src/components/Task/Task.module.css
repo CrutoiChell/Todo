@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+}
+
+.cheked {
+    flex: 1;
+    text-decoration: line-through;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nocheked {
+    flex: 1;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.input,
+.inputCheked {
+    flex: 1;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input:focus,
+.inputCheked:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+.btnEdit,
+.btnTrash {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btnEdit:hover {
+    background-color: rgba(0, 200, 83, 0.1);
+}
+
+.btnTrash:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
